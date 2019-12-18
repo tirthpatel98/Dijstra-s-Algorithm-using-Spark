@@ -82,12 +82,12 @@ if __name__ == '__main__':
     sc = SparkContext(conf=conf)
     sc.setLogLevel('WARN')
     assert sc.version >= '2.4'  # make sure we have Spark 2.4+
-    inputs = sys.argv[1]
-    output = sys.argv[2]
-    source = int(sys.argv[3])
-    dest = int(sys.argv[4])
-    #inputs='graph-2'
-    #output='output-112'
-    #source=12
-    #dest=45
+    #inputs = sys.argv[1]
+    #output = sys.argv[2]
+    #source = int(sys.argv[3])
+    #dest = int(sys.argv[4])
+    inputs='graph-2'
+    output='output-112'
+    source=12
+    dest=45
     main(inputs, output,source,dest)
